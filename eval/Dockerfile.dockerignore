@@ -1,0 +1,10 @@
+.git
+**/node_modules
+**/dist
+**/.venv
+**/__pycache__
+backend/chainlit/frontend/dist
+backend/chainlit/copilot/dist
+cypress
+docs
+images
