@@ -72,6 +72,10 @@ known-first-party = ["chainlit"]
 [tool.uv]
 default-groups = ["backend"]
 package = false
+exclude-newer = "7 days"
+# eMudhra / emSign emergency updates bypass the cooldown; review after 2026-10-27
+exclude-newer-package = { certifi = false, pip = false }
+constraint-dependencies = ["certifi>=2026.10.19"]
 
 [tool.uv.sources]
 chainlit = { workspace = true }
